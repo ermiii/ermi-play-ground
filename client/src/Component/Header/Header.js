@@ -1,6 +1,6 @@
 import React from "react";
 import { Nav, Navbar, NavItem } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+
 import styled from "styled-components";
 
 const Styles = styled.div`
@@ -40,9 +40,9 @@ function Header() {
           <Nav className="ml-auto">
             <NavItem>
               <Nav.Link href="/#">Login</Nav.Link>
-       </NavItem>
-            <NavItem> 
-              <Nav.Link href="/#/signUp" >signUp</Nav.Link>
+            </NavItem>
+            <NavItem>
+              <Nav.Link href="/#/signUp">signUp</Nav.Link>
             </NavItem>
           </Nav>
         </Navbar.Collapse>
