@@ -1,42 +1,39 @@
 import React, { Component } from "react";
-import LoginStudent from "./components/LoginStudent";
-import LoginMentors from "./components/LoginMentors";
-import LoginAdmin from "./components/LoginAdmin";
-import Navigation from "./components/Navigation";
-import NavigationBar from "./components/NavigationBar";
-import { HashRouter, Route, Switch } from "react-router-dom";
-import { getMessage } from "./service";
 
+import {
+  BrowserRouter as Router,
+  HashRouter,
+  Switch,
+  Route
+} from "react-router-dom";
+import Header from "./Component/Header/Header";
+import Footer from "./Component/Footer/Footer";
+import SignUp from "./Component/Register/Signup";
+import ThankYou from "./Component/Register/ThankYou";
+import Login from "./Component/Register/Login";
+import StudentRegister from "./Component/Student/StudentRegister";
+import MentorHome from "./Component/Mentor/MentorHome";
+import AdminHome from "./Component/Admin/AdminHome";
+
+// import { getMessage } from "./service";
 import "./App.css";
-//import Test from "./components/Test";
-export class App extends Component {
-  state = { message: "Loading..." };
 
-  componentDidMount() {
-    getMessage().then(message => this.setState({ message }));
-  }
-
+class App extends Component {
   render() {
-    const { message } = this.state;
     return (
-      <div>
-        <div className="flex-container">
-          <HashRouter>
-            <NavigationBar />
+      <HashRouter>
+        <Header />
+        <Switch>
+          <Route path="/" exact component={Login} />
+          <Route path="/signUp" exact component={SignUp} />
+          <Route path="/thankYou" exact component={ThankYou} />
+          <Route path="/studentRegistered" component={StudentRegister} />
 
-            <Switch>
-              <Route path="/admin" component={LoginAdmin} />
-              <Route path="/mentor" component={LoginMentors} />
-              <Route path="/student" component={LoginStudent} />
-            </Switch>
-
-            <Navigation />
-          </HashRouter>
-        </div>
-        {/* <p className="message" data-qa="message">
-          {message}
-        </p> */}
-      </div>
+          <Route path="/mentorHome" exact component={MentorHome} />
+          <Route path="/adminHome" exact component={AdminHome} />
+        </Switch>
+        <Footer />
+      </HashRouter>
     );
   }
 }
