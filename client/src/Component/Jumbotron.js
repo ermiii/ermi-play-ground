@@ -28,7 +28,7 @@ const Styles = styled.div`
   color: #ecf0f1;
   
   &__container {
-    font-weight: 600;
+    font-weight: 600px;
     overflow: hidden;
     height: 40px;
     padding: 0 40px;
@@ -146,21 +146,21 @@ const Styles = styled.div`
   83.3%,95.96% {transform:translate3d(0,-25%,0);}
 }
 
-// 6 is the number of animation.
-// Here, there are 4 lines :
+6 is the number of animation.
+Here, there are 4 lines :
 
-// 1 to 2
-// 2 to 3
-// 3 to 4
-// 4 to 3
-// 3 to 2
-// 2 to 1
+1 to 2
+2 to 3
+3 to 4
+4 to 3
+3 to 2
+2 to 1
 
-// 6x + 6y = 100 (100% duration)
+6x + 6y = 100 (100% duration)
 
 // HERE : 
-// y = 4 -> Animation between two lines
-// x = 12.66 -> Time spent on a line
+y = 4 -> Animation between two lines
+x = 12.66 -> Time spent on a line
 
 // You can define a value and calculate the other if you want change speed or the number of lines
   
