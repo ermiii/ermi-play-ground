@@ -23,6 +23,7 @@ class App extends Component {
     return (
       <HashRouter>
         <Header />
+       
         <Switch>
           <Route path="/" exact component={Login} />
           <Route path="/signUp" exact component={SignUp} />
