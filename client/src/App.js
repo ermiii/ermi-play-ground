@@ -10,7 +10,7 @@ import StudentRegister from "./Component/Student/StudentRegister";
 import MentorHome from "./Component/Mentor/MentorHome";
 import AdminHome from "./Component/Admin/AdminHome";
 import Layout from "./Component/Layout";
-import Jumbotron from "./Component/Jumbotron";
+import Jumbotron from "./Component/Jumbotron/Jumbotron";
 
 // import { getMessage } from "./service";
 import "./App.css";
