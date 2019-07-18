@@ -3,8 +3,12 @@ import { Jumbotron as Jumbo, Container } from "react-bootstrap";
 import styled from "styled-components";
 
 const Styles = styled.div`
+container{
+  width:100%;
+
+}
   .jumbo {
-  position: fixed;
+  position: relative;
   width: 100%;
   height: 100px;
   position: absolute;
@@ -162,8 +166,13 @@ x = 12.66 -> Time spent on a line
 // You can define a value and calculate the other if you want change speed or the number of lines
   
 }
-@media (max-width: 480px) { 
-.content {
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+  
+  .content {
   position: absolute;
   top: 100%;
   left: 50%;
@@ -179,14 +188,31 @@ x = 12.66 -> Time spent on a line
    
  
 }
-.jumbo{heigh:100px;{
-  width: 100%;
-  height: 100px;
+.jumbo{
   
+  height: 100px;
   position: absolute;
   background-color: #34495e;
 
   }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+
+
+
+
+
+
+@media (max-width: 480px) { 
+
 
 }
 

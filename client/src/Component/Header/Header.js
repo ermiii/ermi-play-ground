@@ -23,6 +23,34 @@ const Styles = styled.div`
       color: black;
     }
   }
+
+  // Extra small devices (portrait phones, less than 576px)
+  // No media query since this is the default in Bootstrap
+
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+    .nav-bar {
+      position: absolute;
+    }
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    ...;
+  }
+
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    ...;
+  }
+
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    ...;
+  }
+  @media screen and (max-width: 520px){
+
+}
 `;
 
 function Header() {
