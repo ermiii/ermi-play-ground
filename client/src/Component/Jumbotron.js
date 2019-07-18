@@ -4,12 +4,12 @@ import styled from "styled-components";
 
 const Styles = styled.div`
   .jumbo {
-     position: fixed;
+  position: fixed;
   width: 100%;
   height: 100px;
   position: absolute;
   background-color: #34495e;
-   margin-bottom:100px;
+  margin-bottom:100px;
  
 }
 
@@ -17,31 +17,28 @@ const Styles = styled.div`
   position: absolute;
   top: 100%;
   left: 50%;
-  
   transform: translate(-50%, -50%);
   height: 160px;
   overflow:hidden;
-   
   font-family: 'Lato', sans-serif;
   font-size: 35px;
   line-height: 40px;
   color: #ecf0f1;
-  
   &__container {
-    font-weight: 600px;
-    overflow: hidden;
-    height: 40px;
-    padding: 0 40px;
+  font-weight: 600px;
+  overflow: hidden;
+  height: 40px;
+  padding: 0 40px;
   
 
-    &:before {
+  &:before {
       content: '[';
       left: 0;
     }
 
     &:after {
-      content: ']';
-      position: absolute;
+    content: ']';
+    position: absolute;
      margin-bottom: 100px;
       right: 0;
     }
