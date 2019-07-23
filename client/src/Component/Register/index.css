@@ -78,11 +78,41 @@ border-right: 1px solid  rgb(190, 15, 15);
   background: rgb(30, 156, 58);
 }
 @media screen and (max-width: 520px){
+.main{
+  text-align: center;
+  width: auto;
+margin-top: 50px;
+
+
 
 }
+
+.btn{
+  display: block;
+  /* width: 100px; */
+  padding: 0.2rem;
+  border-radius: 10px;
+   border: none;
+   cursor: pointer;
+     background: #dfc492;
+   /* background:  #a8936b; */
+   color: #2c2e2d;
+   font-size: 10px;
+}
+.btnSection{
+  margin-top: 1rem;
+display: flex;
+ justify-content: space-around;
+width: 100%;
+
+}
+.user img{
+  max-width: 50px;
+  color: #6e7271;
+}}
 @media screen and (max-width: 600px){
 .main{
-  margin-top: 100px;
+  margin-top: 10px;
 width: 100%;
 padding-top: 1rem;
 

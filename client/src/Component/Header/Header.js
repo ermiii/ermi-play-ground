@@ -1,11 +1,12 @@
 import React from "react";
 import { Nav, Navbar, NavItem } from "react-bootstrap";
+import Logo from '../image/cyf_brand.png'
 
 import styled from "styled-components";
 
 const Styles = styled.div`
   .navbar {
-    background-color: white;
+   
   }
   .navbar-brand {
     margin: 0;
@@ -60,7 +61,7 @@ function Header() {
         <Navbar.Brand>
           <img
             className="img-responsive logo"
-            src="https://codeyourfuture.io/wp-content/uploads/2019/03/cyf_brand.png"
+            src={Logo}
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
